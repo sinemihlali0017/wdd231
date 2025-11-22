@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carter Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="Welcome to the Carter Chamber of Commerce. Supporting local businesses and community growth.">
+    <meta name="author" content="Sinemihlali Mahlathini">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <!-- Social Sharing -->
+    <meta property="og:title" content="Carter Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses, community, and growth.">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:type" content="website">
+
+
+
+    <img src="images/home.svg" alt="site logo" width="" height="">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Carter Chamber</h1>
+        <button id="menu-btn">☰</button>
+
+        <nav id="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="images/hero.jpeg" alt="Chamber Hero Image">
+        <div class="hero-text">
+            <h2>Supporting Local Business & Community Growth</h2>
+            <a class="cta-btn" href="join.html">Join the Chamber</a>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Current Events -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+                <h3>Business Networking Night</h3>
+                <p>December 5th • Carter Community Center</p>
+            </div>
+
+            <div class="event-card">
+                <h3>Holiday Market</h3>
+                <p>December 12th • Downtown Plaza</p>
+            </div>
+        </section>
+
+        <!-- WEATHER -->
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <p><strong>Current:</strong> <span id="current-temp"></span>°C - <span id="weather-desc"></span></p>
+
+            <div class="forecast">
+                <h3>3-Day Forecast</h3>
+                <ul id="forecast-list"></ul>
+            </div>
+        </section>
+
+        <!-- SPOTLIGHTS -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container">
+                <!-- JS loads 2–3 spotlight cards here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Contact us: info@carterchamber.com | (078) 555-1678</p>
+        <p>&copy; <span id="year"></span> Carter Chamber of Commerce</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/home.js"></script>
+
+
+</body>
+
+</html>

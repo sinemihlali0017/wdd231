@@ -1,0 +1,111 @@
+/*#D3D3D3
+#AFEEEE */
+header {
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    padding: 8px 0 8px 10px;
+    align-items: end;
+    border-bottom: solid 1px lightgray;
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #808080;
+}
+
+.hamburger {
+    background-color: none;
+    border: none;
+    color: #555555;
+    cursor: pointer;
+}
+
+.hamburger::after {
+
+    content: "\2630";
+    font-size: 2rem;
+}
+
+
+.hamburger.show::after {
+
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #D3D3D3;
+    text-decoration: none;
+    border-bottom: #D3D3D3;
+
+
+}
+
+.navigation li.current {
+    background-color: #555555
+}
+
+
+.navigation a:hover {
+    background-color: #AFEEEE;
+}
+
+
+footer {
+    background-color: beige;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+
+.social {
+
+    display: flex;
+    justify-content: center;
+    column-gap: 10;
+
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    height: 25px;
+    height: 25px;
+    border: #808080 solid 1px;
+    border-radius: 5px;
+}
+
+.social a:hover {
+    background-color: azure;
+}

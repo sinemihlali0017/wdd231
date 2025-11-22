@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Business Directory | Chamber of Commerce</title>
+
+
+    <meta name="description"
+        content="Local Chamber of Commerce business directory featuring local companies and services.">
+    <meta name="author" content="Your Full Name">
+
+
+    <meta property="og:title" content="Chamber Business Directory">
+    <meta property="og:description" content="Explore local businesses and services in our Chamber directory.">
+    <meta property="og:image" content="images/favicon.png">
+    <meta property="og:url" content="https://yourdomain.com/directory.html">
+    <meta property="og:type" content="website">
+
+    < <link rel="icon" type="image/svg" href="images/favicon.svg">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER ---------------------------->
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <button id="menu-btn">☰</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">home</a>
+            <a href="contact.html">contacts</a>
+
+        </nav>
+    </header>
+
+    <!-- MAIN ------------------------------>
+    <main>
+        <h2>Business Directory</h2>
+
+        <div class="view-buttons">
+            <button id="grid-btn">Grid View</button>
+            <button id="list-btn">List View</button>
+        </div>
+
+        <section id="members" class="grid-view">
+            <!-- JS will insert business cards here -->
+        </section>
+    </main>
+
+    <!-- FOOTER ---------------------------->
+    <footer>
+        <p>Contact us: info@chamber.com | (555) 555-5555</p>
+        <p>WDD 231 | Created by Your Full Name</p>
+        <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/directory.js"></script>
+
+</body>
+
+</html>

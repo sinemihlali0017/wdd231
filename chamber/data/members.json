@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Sybrin Systems",
+        "membership": "Gold",
+        "phone": "(011) 555-1234",
+        "address": "3rd Floor, Block A, The Pivot, 1 Montecasino Boulevard, Fourways, Johannesburg, 2191",
+        "website": "https://www.sybrin.com",
+        "logo": "images/sybrin.png"
+    },
+    {
+        "name": "Sage South Africa",
+        "membership": "Silver",
+        "phone": "(011) 555-5678",
+        "address": "6th Floor, Gateway West, 22 Magwa Crescent, Waterfall 5-lr, Midrand, Johannesburg, 2066",
+        "website": "https://www.sage.com/en-za",
+        "logo": "images/sage.png"
+    },
+    {
+        "name": "Soweto Book Café",
+        "membership": "Gold",
+        "phone": "(011) 555-9012",
+        "address": "1023 Mafumbu Street, Zondi 1, Soweto, Johannesburg",
+        "website": "https://www.thebooktree.co.za/the-soweto-book-cafe",
+        "logo": "images/book.jpeg"
+    },
+    {
+        "name": "Love Books",
+        "membership": "Silver",
+        "phone": "(011) 555-3456",
+        "address": "53 Rustenburg Road, Melville, Johannesburg",
+        "website": "https://www.lovebooks.co.za",
+        "logo": "images/love.jpeg"
+    }
+]
