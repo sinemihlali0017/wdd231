@@ -34,4 +34,19 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+    // Last updated functionality
+    document.addEventListener('DOMContentLoaded', function () {
+        // Set current year
+        const yearElement = document.getElementById('year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+        // Set last modified date
+        const lastModifiedElement = document.getElementById('last-modified');
+        if (lastModifiedElement) {
+            lastModifiedElement.textContent = document.lastModified;
+        }
+    });
+
 });
