@@ -1,0 +1,37 @@
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Header */
+    .header-content {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .logo-link {
+        gap: var(--spacing-md);
+    }
+
+    .chamber-name {
+        font-size: 1.75rem;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        gap: var(--spacing-xl);
+    }
+
+    /* Visitor Message */
+    .visitor-message {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Discover Header */
+    .discover-header {
+        text-align: center;
+        margin: var(--spacing-xl) 0
+    }
+}

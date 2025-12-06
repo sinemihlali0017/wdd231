@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Alberton | Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <script type="module" src="places.js"></script>
+    <script src="discover.js"></script>
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover_base.css">
+    <link rel="stylesheet" href="styles/discover_small.css">
+    <link rel="stylesheet" href="styles/discover_medium.css">
+    <link rel="stylesheet" href="styles/discover_large.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <img src="images/favicon.svg" alt="Chamber Logo" width="60" height="60" class="logo">
+                    <div class="logo-text">
+                        <h1 class="chamber-name">Alberton Chamber</h1>
+                        <p class="chamber-tagline">of Commerce</p>
+                    </div>
+                </a>
+
+                <nav class="main-nav">
+                    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html" class="active">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="visitor-section" aria-live="polite">
+            <div id="visitor-message"></div>
+        </section>
+
+        <section class="discover-header">
+            <h1 id="discover-title">Discover Alberton</h1>
+            <p>Explore 8 amazing local attractions and businesses in our community</p>
+
+            <div class="visit-counter">
+                <p>Total Visits: <span id="total-visits">0</span></p>
+            </div>
+        </section>
+
+        <section class="discover-grid-section">
+            <div class="discover-grid" id="discover-grid">
+                <div class="loading-placeholder">
+                    <p>Loading discovery items...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Alberton Chamber of Commerce</p>
+                <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="business-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </dialog>
+
+    <a href="#discover-title" class="skip-link">Skip to content</a>
+</body>
+
+</html>
