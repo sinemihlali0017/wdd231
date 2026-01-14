@@ -1,11 +1,33 @@
 /*#D3D3D3
 #AFEEEE */
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+
+
+
 header {
     display: grid;
-    grid-template-columns: 30px auto 44px;
+    grid-template-columns: 25px auto 44px;
     padding: 8px 0 8px 10px;
     align-items: end;
-    border-bottom: solid 1px lightgray;
+    border-bottom: solid 1px #AFEEEE;
     column-gap: 10px;
 }
 
@@ -18,13 +40,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #808080;
+    color: #D3D3D3;
 }
 
 .hamburger {
     background-color: none;
     border: none;
-    color: #555555;
+    color: #D3D3D3;
+    ;
     cursor: pointer;
 }
 
@@ -50,62 +73,107 @@ header span {
     display: block;
 }
 
+
 .navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 .navigation a {
+
     display: block;
     padding: .8rem 10px;
-    color: #D3D3D3;
     text-decoration: none;
-    border-bottom: #D3D3D3;
+    color: black;
+    border-bottom: solid 1px #AFEEEE;
+
+
+
+
 
 
 }
+
 
 .navigation li.current {
-    background-color: #555555
+    background-color: aquamarine;
+}
+
+.navigation a:hover {
+    background-color: #D3D3D3;
 }
 
 
-.navigation a:hover {
-    background-color: #AFEEEE;
+
+
+h1 {
+
+
+    color: #AFEEEE
 }
 
 
 footer {
-    background-color: beige;
+    background-color: #D3D3D3;
     padding: 1rem 10px;
+
     text-align: center;
+
+
+
 }
 
-
 .social {
-
     display: flex;
     justify-content: center;
-    column-gap: 10;
+    column-gap: 7px;
 
 }
 
 .social a {
     display: flex;
-    justify-content: center;
-    justify-items: center;
     width: 44px;
     height: 44px;
+    justify-content: center;
+    align-items: center;
+    border: solid 22px #D3D3D3;
 }
 
 .social img {
+
+    width: 25px;
     height: 25px;
-    height: 25px;
-    border: #808080 solid 1px;
-    border-radius: 5px;
 }
 
 .social a:hover {
-    background-color: azure;
+    background-color: rgb(128, 83, 0);
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #fafafa;
+}
+
+/* ===== Grid Layout ===== */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+
+
+.layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "about profile"
+        "courses courses";
 }

@@ -1,29 +1,138 @@
-@media only screen and (min-width:38rem){
+@media only screen and (min-width:38rem) {
 
-header, main, nav, footer {
-    max-width: 900px;
-    margin: 0 auto;
-     
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+
+    }
+
+    .hamburger {
+
+        display: none;
+
+        grid-template-columns: 24px auto;
+    }
+
+
+    .navigation {
+        display: block
+    }
+
+
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        gap: 1.5rem;
+    }
+
+
+    .navigation a {
+        border: none;
+    }
+
+
+
+
+
+
+
 }
-.hamburger {
 
-   display: none;
 
-   grid-template-columns: 24px auto;
+.layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "about profile"
+        "courses courses";
+}
+
+.about {
+    grid-area: about;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.courses {
+    grid-area: courses;
 }
 
 
-.navigation {
-    display:block
+/* ===== Sections ===== */
+section {
+    background-color: #ffffff;
+    padding: 1.25rem;
+    border-radius: 8px;
 }
 
+/* ===== Image ===== */
+.profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-
-
-
-.navigation ul {
+/* ===== Courses ===== */
+.course-filters {
     display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
+.course-filters button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.course-filters button.active {
+    background-color: #222;
+    color: #fff;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== Course Card ===== */
+.course-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.course-item:hover {
+    transform: translateY(-2px);
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.course-tech {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.social a:hover {
+    background-color: rgb(128, 83, 0);
 
 }

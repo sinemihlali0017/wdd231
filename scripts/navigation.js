@@ -1,8 +1,11 @@
-const navbottom = document.querySelector('#nav-hbr');
+const Navbottom = document.querySelector('#ham-btn');
+const navlinks = document.querySelector('#nva-bar');
 
-const navlinks = document.querySelector('#nav-links');
+Navbottom.addEventListener('click', () => {
 
-navbottom.addEventListener('click', () => {
-    navbottom.classList.toggle('show');
+    Navbotton.classList.toggle('show');
     navlinks.classList.toggle('show');
+
 });
+
+
