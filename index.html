@@ -4,42 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+
+    <meta name="author" content="Sinemihlali Mahlathini">
+    <meta name="description"
+        content="This is the home page for Sinemihlali Mahlathini on the WDD231 course. It gives a brief overview of me and my learning journey.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
         rel="stylesheet">
-    <meta author="" content="Sinemihlali Mahlathini">
-    <meta name="description"
-        content="this is the home page for sinemihlali Mahlathini on the wdd231 course, it brief of me and the progress i have made in my journey  ">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+
     <script src="scripts/courses.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-
 </head>
 
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Logo" width="" height="">
+        <img src="images/home.svg" alt="Site Logo">
 
-        <span>Sinemihlali WWD231 Home Page</span>
+        <span>Sinemihlali WDD231 Home Page</span>
 
-        <button id="ham-btn" class="hamburger"></button>
-
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current">
-                <a href="home.html">Home Page</a>
+                <a href="home.html" arial-current=" page">Home Page</a>
             </li>
             <li>
-                <a href="Chamber.html">Chamber Assignment</a>
+                <a href="chamber.html">Chamber Assignment</a>
             </li>
             <li>
                 <a href="final_project.html">Final Project</a>
@@ -47,48 +48,23 @@
         </ul>
     </nav>
 
+    <main class="layout">
 
+        <h1>Home Page</h1>
 
-    </nav>
-
-
-
-
-    <main clas="layout">
-
-        <h1>
-            Home Page
-        </h1>
         <section class="about">
             <h2>About Me</h2>
-
-
-            <p> Hello my name is sinemihlali Mahalthini All the way from south Africa .
-                I am a student here at Brigahm Young University and love traveling and learning about different cultures
-                Besides that I love learning and improving my skills.
+            <p>
+                Hello, my name is Sinemihlali Mahlathini from South Africa.
+                I am a student at Brigham Young University and I love traveling and learning about different cultures.
+                I enjoy improving my skills and learning new things.
             </p>
-
-
-
-
-
         </section>
 
-
-
-        <section class="profile ">
+        <section class="profile">
             <h2>Student Photo</h2>
-            <Img src="images/profile.jpg" width="200" alt="student photo" class="left-img">
-
-
+            <img src="images/profile.jpg" width="200" alt="Student photo" class="left-img">
         </section>
-
-
-
-
-
-
-
 
         <!-- COURSES -->
         <section class="courses">
@@ -103,32 +79,27 @@
             <ul id="courseList" class="course-list"></ul>
         </section>
 
-
-
-
-
-
-    </Main>
-
+    </main>
 
     <footer>
-
         <div class="social">
-            <a href="https://www.linkedin.com/in/sinemihlali-mahlathini-023865304" target="_blank"><img
-                    src="images/facebook (2).svg" alt="Facebook" height="16" width="16"></a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook (2).svg" alt="Facebook" width="16" height="16">
+            </a>
 
-            <a href="https://www.linkedin.com/in/sinemihlali-mahlathini-023865304" arget="_blank"><img
-                    src="images/linkedin.svg" alt="linkedin" height="16" width="16"></a>
+            <a href="https://www.linkedin.com/in/sinemihlali-mahlathini-023865304" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
 
-            <a href="https://github.com/sinemihlali0017" target="_blank"><img src="images/github.svg" alt="github"
-                    height="16" width="16"></a>
+            <a href="https://github.com/sinemihlali0017" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
 
-            <a href="https://www.instagram.com/limisemahlathini?igsh=Mjd4OWhsbG5oeTV4" target="_blank"><img
-                    src="images/instagram.svg" alt="instagram" height="16" width="16"></a>
-
-
-
+            <a href="https://www.instagram.com/limisemahlathini" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
         </div>
+
         <p id="copyright"></p>
         <p id="last-updated"></p>
     </footer>

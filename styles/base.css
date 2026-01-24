@@ -157,22 +157,8 @@ footer {
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    background-color: #fafafa;
+    background-color: gray;
+    margin: 15;
 }
 
 /* ===== Grid Layout ===== */
-.layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem;
-}
-
-
-
-.layout {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "about profile"
-        "courses courses";
-}

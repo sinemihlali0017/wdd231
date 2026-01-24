@@ -15,7 +15,7 @@ const apiKey = '06a6c5f6c3a1e76cfe6f77cc074bee0a'; // <- replace with your real 
 // Johannesburg coordinates: lat, lon :contentReference[oaicite:0]{index=0}
 const lat = -26.195246;
 const lon = 28.034088;
-const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,alerts&appid=${apiKey}`;
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,alerts&appid=${apiKey}';
 
 async function loadWeather() {
     try {
