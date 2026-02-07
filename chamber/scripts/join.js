@@ -1,6 +1,5 @@
 // join.js - Join page functionality
 
-
 const menuBtn = document.getElementById("menu-btn");
 const nav = document.getElementById("main-nav");
 

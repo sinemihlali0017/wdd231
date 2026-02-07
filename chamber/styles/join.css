@@ -70,15 +70,6 @@ header {
 }
 
 
-/*#main-nav {
-    display: none;
-    flex-direction: column;
-    background: var(--blue);
-} 
-
-
-
-
 
 /* Base styles */
 .join-container {
@@ -281,11 +272,11 @@ header {
 }
 
 .card-silver .card-header {
-    background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+    background: linear-gradient(135deg, #e0b444, #a0a0a0);
 }
 
 .card-gold .card-header {
-    background: linear-gradient(135deg, #7f8c8d, #95a5a6);
+    background: linear-gradient(135deg, #e0b444, #95a5a6);
 }
 
 /* Card Animation Delays */
@@ -448,7 +439,7 @@ header {
     footer {
         justify-items: center;
 
-        border: #1b2a41;
+        background-color: #7f8c8d;
 
     }
 
