@@ -169,7 +169,8 @@ header {
 }
 
 .submit-btn {
-    background: linear-gradient(to right, #2ecc71, #27ae60);
+
+    background: linear-gradient(to right, #1b2a41, #2e4a72);
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -183,7 +184,7 @@ header {
 }
 
 .submit-btn:hover {
-    background: linear-gradient(to right, #27ae60, #219653);
+    background: linear-gradient(to right, #2980b9, #a0a0a0);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
 }
@@ -276,7 +277,7 @@ header {
 }
 
 .card-bronze .card-header {
-    background: linear-gradient(135deg, #cd7f32, #b56c20);
+    background: linear-gradient(135deg, #7f8c8d, #555);
 }
 
 .card-silver .card-header {
@@ -284,7 +285,7 @@ header {
 }
 
 .card-gold .card-header {
-    background: linear-gradient(135deg, #ffd700, #e6c200);
+    background: linear-gradient(135deg, #7f8c8d, #95a5a6);
 }
 
 /* Card Animation Delays */
