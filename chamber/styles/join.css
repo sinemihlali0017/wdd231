@@ -131,7 +131,7 @@ header {
 }
 
 .required {
-    color: #e74c3c;
+    color: #2e4a72;
 }
 
 .form-group input[type="text"],
@@ -409,14 +409,14 @@ header {
 
 /* Error Messages */
 .error-message {
-    color: #e74c3c;
+
     font-size: 0.875rem;
     margin-top: 0.25rem;
 }
 
 .form-group input:invalid:not(:focus):not(:placeholder-shown),
 .form-group select:invalid:not(:focus) {
-    border-color: #e74c3c;
+    background-color: #2e4a72;
 }
 
 /* Responsive Design */
