@@ -29,7 +29,7 @@ body {
     font-family: var(--body-font);
     line-height: 1.6;
     color: var(--text-light);
-    background-color: white;
+    background-color: lightgrey;
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-md);
