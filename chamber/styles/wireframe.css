@@ -1,9 +1,9 @@
 /* CSS Variables for Color Scheme and Typography */
 :root {
-    --primary-color: #36413e;
-    --secondary-color: #beb2c8;
+    --primary-color: #1b2a41;
+    --secondary-color: #2e4a72;
     --accent1-color: #5d5e60;
-    --accent2-color: #8d8d92;
+    --accent2-color: #e0b444;
     --heading-font: 'Roboto', sans-serif;
     --body-font: 'Lato', sans-serif;
     --text-light: white;
@@ -13,6 +13,10 @@
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
 }
+
+
+
+
 
 /* Reset and Base Styles */
 * {
