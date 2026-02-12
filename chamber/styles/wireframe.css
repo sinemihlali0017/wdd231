@@ -28,8 +28,8 @@
 body {
     font-family: var(--body-font);
     line-height: 1.6;
-    color: var(--accent2-color);
-    background-color: white;
+    color: var(--text-light);
+    background-color: var(--accent1-color);
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-md);
