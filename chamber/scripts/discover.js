@@ -1,103 +1,64 @@
+
+
 import businessData from "../data/places.mjs";
 
-// DOM Elements
-const discoverGrid = document.getElementById("discover-grid");
-const visitorMessage = document.getElementById("visitor-message");
-const visitorSection = document.getElementById("visitor-section");
-const businessModal = document.getElementById("business-modal");
-const modalBody = document.getElementById("modal-body");
-const modalClose = document.querySelector(".modal-close");
-const totalVisitsElement = document.getElementById("total-visits");
-const currentYear = document.getElementById("current-year");
-const lastModified = document.getElementById("last-modified");
+/* ===============================
+   BUILD CARDS
+================================== */
 
-// Storage Keys
-const LAST_VISIT_KEY = "chamber_last_visit";
-const TOTAL_VISITS_KEY = "chamber_total_visits";
+const container = document.querySelector("#discover-container");
 
-// Counter
-function updateVisitCounter() {
-    let visits = parseInt(localStorage.getItem(TOTAL_VISITS_KEY)) || 0;
-    visits++;
-    localStorage.setItem(TOTAL_VISITS_KEY, visits);
-    totalVisitsElement.textContent = visits;
-}
+businessData.forEach(place => {
+    const card = document.createElement("section");
+    card.classList.add("discover-card");
 
-// Visitor Message
-function displayVisitorMessage() {
-    const lastVisit = localStorage.getItem(LAST_VISIT_KEY);
-    const now = Date.now();
+    // Assign named grid area
+    card.style.gridArea = `card${place.id}`;
 
-    let message = "";
+    card.innerHTML = `
+        <h2>${place.name}</h2>
+        <figure>
+            <img src="${place.photo_url}" 
+                 alt="${place.name}" 
+                 loading="lazy"
+                 class="discover-image">
+        </figure>
+        <address>${place.address}</address>
+        <p>${place.description}</p>
+        <button class="learn-more-btn">Learn More</button>
+    `;
 
-    if (!lastVisit) {
-        message = "Welcome! Let us know if you have questions.";
+    container.appendChild(card);
+});
+
+/* ===============================
+   LOCAL STORAGE VISIT MESSAGE
+================================== */
+
+const visitMessage = document.getElementById("visit-message");
+
+const now = Date.now();
+const lastVisit = localStorage.getItem("lastVisit");
+
+if (!lastVisit) {
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const days = Math.floor((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
+
+    if (days < 1) {
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else if (days === 1) {
+        visitMessage.textContent = "You last visited 1 day ago.";
     } else {
-        const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-        message = days === 0 ? "Back so soon! Awesome!" :
-            `You last visited ${days} day(s) ago.`;
+        visitMessage.textContent = `You last visited ${days} days ago.`;
     }
-
-    visitorMessage.innerHTML = `
-        <div class="message-box">
-            ${message}
-        </div>
-    `;
-
-    localStorage.setItem(LAST_VISIT_KEY, now);
 }
 
-// Create Cards
-function createDiscoveryCards() {
-    discoverGrid.innerHTML = "";
+localStorage.setItem("lastVisit", now);
 
-    businessData.forEach((b) => {
-        const card = document.createElement("article");
-        card.className = "discovery-card";
+/* ===============================
+   FOOTER
+================================== */
 
-        card.innerHTML = `
-            <h2>${b.name}</h2>
-            <img src="${b.photo_url}" alt="${b.name}">
-            <p>${b.description}</p>
-            <button data-id="${b.id}">Learn More</button>
-        `;
-
-        discoverGrid.appendChild(card);
-    });
-
-    document.querySelectorAll(".discovery-card button").forEach(btn => {
-        btn.addEventListener("click", () => showBusinessDetails(btn.dataset.id));
-    });
-}
-
-// Modal
-function showBusinessDetails(id) {
-    const b = businessData.find(x => x.id == id);
-
-    modalBody.innerHTML = `
-        <h2>${b.name}</h2>
-        <p>${b.description}</p>
-        <p><strong>Address:</strong> ${b.address}</p>
-        <p><strong>Hours:</strong> ${b.hours}</p>
-    `;
-
-    businessModal.showModal();
-}
-
-modalClose.addEventListener("click", () => businessModal.close());
-
-// Footer Updates
-function updateFooterInfo() {
-    currentYear.textContent = new Date().getFullYear();
-    lastModified.textContent = document.lastModified;
-}
-
-// Init
-function init() {
-    updateVisitCounter();
-    displayVisitorMessage();
-    createDiscoveryCards();
-    updateFooterInfo();
-}
-
-document.addEventListener("DOMContentLoaded", init);
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("last-modified").textContent = document.lastModified;

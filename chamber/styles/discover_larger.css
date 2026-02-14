@@ -1,37 +1,30 @@
-/* Large Screens (1025px and above) */
 @media (min-width: 1025px) {
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
+    .discover-grid {
+        grid-template-areas:
+            "card1 card1 card2"
+            "card3 card4 card2"
+            "card5 card6 card7"
+            "card8 card8 card8";
     }
 
-    /* Header */
-    .header-content {
-        padding: var(--spacing-lg) 0;
+    /* Apply hover effect for large screens */
+    .discover-card img {
+        transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
     }
 
-    .logo-link {
-        gap: var(--spacing-md);
+    .discover-card img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        filter: brightness(1.15) contrast(1.1);
+        border-radius: 5px;
     }
 
-    .chamber-name {
-        font-size: 1.75rem;
+    /* Add some visual interest to the layout */
+    .discover-card {
+        transition: transform 0.3s ease;
     }
 
-    /* Navigation */
-    .nav-menu {
-        gap: var(--spacing-xl);
-    }
-
-    /* Visitor Message */
-    .visitor-message {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    /* Discover Header */
-    .discover-header {
-        text-align: center;
-        margin: var(--spacing-xl) 0
+    .discover-card:hover {
+        transform: translateY(-5px);
     }
 }
