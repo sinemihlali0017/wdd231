@@ -136,7 +136,6 @@ header h1 {
 /* Footer */
 footer {
     background: var(--blue-dark);
-    color: var(--white);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;

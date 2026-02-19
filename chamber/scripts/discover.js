@@ -21,7 +21,7 @@ businessData.forEach(place => {
     card.innerHTML = `
         <h2>${place.name}</h2>
         <figure>
-            <img src="${place.logo}" 
+            <img ="${place.photo_url}" 
                  alt="${place.name}" 
                  loading="lazy"
                  class="discover-image"> 

@@ -94,10 +94,8 @@ main {
     display: flex;
 }
 
-
-
 footer {
 
-    justify-content: center;
+    justify-items: center;
     background-color: #1b2a41;
 }

@@ -32,7 +32,6 @@ function displayMembers(members) {
             <h3>${member.name}</h3>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
-            <p><strong>Industry:</strong> ${member.industry}</p>
             <a href="${member.website}" target="_blank">Visit Website</a>
         `;
 
