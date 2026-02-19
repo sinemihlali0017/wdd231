@@ -6,6 +6,9 @@ import businessData from "../data/places.mjs";
    BUILD CARDS
 ================================== */
 
+
+
+
 const container = document.querySelector("#discover-container");
 
 businessData.forEach(place => {
@@ -18,47 +21,50 @@ businessData.forEach(place => {
     card.innerHTML = `
         <h2>${place.name}</h2>
         <figure>
-            <img src="${place.photo_url}" 
+            <img src="${place.logo}" 
                  alt="${place.name}" 
                  loading="lazy"
-                 class="discover-image">
+                 class="discover-image"> 
         </figure>
         <address>${place.address}</address>
         <p>${place.description}</p>
         <button class="learn-more-btn">Learn More</button>
-    `;
+    `; // ← Added missing backtick and semicolon
 
     container.appendChild(card);
 });
 
-/* ===============================
-   LOCAL STORAGE VISIT MESSAGE
-================================== */
-
 const visitMessage = document.getElementById("visit-message");
 
-const now = Date.now();
-const lastVisit = localStorage.getItem("lastVisit");
+// Check if visitMessage exists before using it
+if (visitMessage) {
+    const now = Date.now();
+    const lastVisit = localStorage.getItem("lastVisit");
 
-if (!lastVisit) {
-    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-} else {
-    const days = Math.floor((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
-
-    if (days < 1) {
-        visitMessage.textContent = "Back so soon! Awesome!";
-    } else if (days === 1) {
-        visitMessage.textContent = "You last visited 1 day ago.";
+    if (!lastVisit) {
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
     } else {
-        visitMessage.textContent = `You last visited ${days} days ago.`;
+        const days = Math.floor((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
+
+        if (days < 1) {
+            visitMessage.textContent = "Back so soon! Awesome!";
+        } else if (days === 1) {
+            visitMessage.textContent = "You last visited 1 day ago.";
+        } else {
+            visitMessage.textContent = `You last visited ${days} days ago.`;
+        }
     }
+
+    localStorage.setItem("lastVisit", now);
 }
 
-localStorage.setItem("lastVisit", now);
+// Check if footer elements exist before using them
+const yearElement = document.getElementById("year");
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
-/* ===============================
-   FOOTER
-================================== */
-
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("last-modified").textContent = document.lastModified;
+const lastModifiedElement = document.getElementById("last-modified");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = document.lastModified;
+}

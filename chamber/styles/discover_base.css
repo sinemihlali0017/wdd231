@@ -33,21 +33,19 @@ header h1 {
 }
 
 #menu-btn {
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: var(--white);
-    cursor: pointer;
     display: block;
 }
 
-/* Navigation styles */
 #main-nav {
     display: none;
-    width: 100%;
     flex-direction: column;
-    background: var(--blue);
 }
+
+/* When nav is open */
+#main-nav.open {
+    display: flex;
+}
+
 
 #main-nav a {
     color: var(--white);

@@ -10,19 +10,16 @@
 
 }
 
-#menu-btn {
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: var(--white);
-    display: block;
-}
+/* Larger screens */
+@media (min-width: 1025px) {
+    #menu-btn {
+        display: none;
+    }
 
-/* NAV */
-#main-nav {
-    display: none;
-    flex-direction: column;
-    background: var(--blue);
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 #main-nav a {
@@ -439,7 +436,7 @@ header {
     footer {
         justify-items: center;
 
-        background-color: #7f8c8d;
+        background-color: #1b2a41;
 
     }
 

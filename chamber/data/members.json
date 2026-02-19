@@ -29,6 +29,30 @@
         "phone": "(011) 555-3456",
         "address": "53 Rustenburg Road, Melville, Johannesburg",
         "website": "https://www.lovebooks.co.za",
-        "logo": "images/love.jpeg"
+        "logo": "images/love.jpg"
+    },
+    {
+        "name": "East Rand Financial Solutions",
+        "membership": "Gold",
+        "phone": "(011) 824-7788",
+        "address": "12 Victoria Street, Germiston CBD, Germiston, 1401",
+        "website": "https://www.eastrandfinancial.co.za",
+        "logo": "images/finance.jpg"
+    },
+    {
+        "name": "Alberton Business Hub",
+        "membership": "Silver",
+        "phone": "(011) 907-1122",
+        "address": "45 Voortrekker Road, Alberton North, Alberton, 1449",
+        "website": "https://www.albertonbusinesshub.co.za",
+        "logo": "images/space.jpg"
+    },
+    {
+        "name": "Germiston Accounting & Tax",
+        "membership": "Gold",
+        "phone": "(011) 825-3344",
+        "address": "89 President Street, Germiston, 1400",
+        "website": "https://www.germistonaccounting.co.za",
+        "logo": "images/tax.png"
     }
 ]

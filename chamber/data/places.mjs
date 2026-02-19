@@ -4,7 +4,7 @@ const businessData = [
         name: "Rietvlei Zoo Farm",
         address: "101 Swartkoppies Road, Mulbarton, Johannesburg South, 1448, South Africa",
         description: "A large outdoor farm-style venue offering picnic areas, cycling trails, markets, and family activities.",
-        photo_url: "images/chamber/rietvlei.webp"
+        photo_url: ".images/chamber/rietvlei.webp"
     },
     {
         id: 2,
