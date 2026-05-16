@@ -62,6 +62,8 @@ header span {
 
     content: "\00D7";
     font-size: 2rem;
+    color: #AFEEEE;
+    cursor: pointer;
 }
 
 .navigation {
@@ -77,6 +79,7 @@ header span {
 .navigation ul {
     list-style: none;
     display: flex;
+
 }
 
 .navigation a {
@@ -146,7 +149,7 @@ footer {
 }
 
 .social a:hover {
-    background-color: blue
+    background-color: rgb(7, 7, 7)
 }
 
 
@@ -157,8 +160,10 @@ footer {
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    background-color: gray;
     margin: 15;
 }
+
+
+
 
 /* ===== Grid Layout ===== */
