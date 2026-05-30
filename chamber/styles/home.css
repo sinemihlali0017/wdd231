@@ -188,6 +188,7 @@ header h1 {
 footer {
 
     justify-items: center;
-    background-color: var(--blue-dark) color: var(--white);
+    background-color: var(--blue-dark);
+    color: var(--white);
 
 }
