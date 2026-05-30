@@ -189,5 +189,6 @@ footer {
 
     justify-items: center;
     background-color: #2e4a72;
+    color: var(--white);
 
 }
