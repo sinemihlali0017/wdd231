@@ -23,7 +23,7 @@
 }
 
 #main-nav a {
-    color: var(--white);
+    color: var(--light);
     padding: 1rem;
     text-decoration: none;
 }
@@ -512,7 +512,7 @@ footer {
     footer {
 
         background-color: #1b2a41;
-        color: white;
+        color: var(--light);
         text-align: center;
 
     }
