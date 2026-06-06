@@ -512,7 +512,7 @@ footer {
     footer {
 
         background-color: var(--blue);
-        color: var(--white);
+        color: var(--light);
         text-align: center;
 
     }
