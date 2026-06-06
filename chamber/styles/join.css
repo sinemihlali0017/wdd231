@@ -30,7 +30,7 @@
 
 #main-nav a.active {
     background: var(--gold);
-    color: var(--blue-dark);
+    color: var(--blue);
 }
 
 /* Show menu (JavaScript toggles) */
@@ -353,7 +353,7 @@ nav {
     overflow-y: auto;
     position: relative;
     animation: modalSlideIn 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(107, 97, 97, 0.3);
 }
 
 .modal-close {
