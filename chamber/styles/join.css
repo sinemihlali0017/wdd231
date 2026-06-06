@@ -58,7 +58,7 @@ body {
 /* HEADER */
 header {
     background: var(--blue-dark);
-    color: var(--white);
+    color: var(--light);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -135,7 +135,7 @@ nav {
 }
 
 #membership-form {
-    background: #fff;
+    background: var(--shadow);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -446,7 +446,7 @@ nav {
 footer {
     text-align: center;
     background-color: #1b2a41;
-    color: white;
+    color: var(--light);
 }
 
 /* Responsive Design */
@@ -511,7 +511,7 @@ footer {
 
     footer {
 
-        background-color: #1b2a41;
+        background-color: var(--blue);
         color: var(--light);
         text-align: center;
 
