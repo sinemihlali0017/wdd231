@@ -52,7 +52,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: lightgray;
-    color: #1b1b1b;
+    color: var(--blue);
 
 }
 
@@ -126,7 +126,7 @@ nav {
 }
 
 .page-header p {
-    color: #666;
+    color: var(--gold);
     font-size: 1.1rem;
 }
 
