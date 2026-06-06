@@ -1,12 +1,17 @@
 // join.js - Join page functionality
+document.addEventListener("DOMContentLoaded", () => {
 
-const menuBtn = document.getElementById("menu-btn");
-const nav = document.getElementById("main-nav");
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
 
-menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+
+        // OPTIONAL: hide hamburger after click (your requirement)
+        hamburger.style.display = "none";
+    });
+
 });
-
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
