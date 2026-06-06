@@ -1,6 +1,5 @@
 /* join.css - Styles for Join page */
-
-:root {
+root {
     --blue-dark: #1b2a41;
     --blue: #2e4a72;
     --gold: #e0b444;
@@ -53,6 +52,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: lightgray;
+    color: #1b1b1b;
+
 }
 
 /* HEADER */
@@ -192,9 +193,8 @@ nav {
 }
 
 .submit-btn {
-
-    background: linear-gradient(to right, #e0b444, #f5f5f5);
-    color: grey;
+    color: #ffffff;
+    background: linear-gradient(to right, #1b2a41, #2e4a72);
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
