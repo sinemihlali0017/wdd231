@@ -33,6 +33,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-md);
+    color: #333;
 }
 
 /* Typography */
@@ -40,25 +41,28 @@ h1,
 h2,
 h3 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: black;
     margin-bottom: var(--spacing-md);
 }
 
 h1 {
     font-style: italic;
     font-size: 2.5rem;
-    color: var(--text-light);
+    color: var();
 }
 
 h2 {
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: var(--spacing-sm);
     margin-top: var(--spacing-lg);
+    color: var(--text-dark);
 }
 
 h3 {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+
 }
 
 p {
@@ -402,4 +406,38 @@ footer p {
     .desktop-blog {
         grid-column: span 12;
     }
+}
+
+#menu-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    display: block;
+}
+
+/* Navigation styles */
+#main-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: var(--blue);
+}
+
+
+
+#menu-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    display: block;
+}
+
+/* NAV */
+#main-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--blue);
 }
