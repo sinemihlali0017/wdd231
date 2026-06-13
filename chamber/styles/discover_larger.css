@@ -5,6 +5,11 @@
             "card3 card4 card2"
             "card5 card6 card7"
             "card8 card8 card8";
+
+        .discover-card {
+            transition: transform 0.6s ease;
+        }
+
     }
 
 
@@ -36,9 +41,7 @@
 }
 
 /* Add some visual interest to the layout */
-.discover-card {
-    transition: transform 0.6s ease;
-}
+
 
 .discover-card:hover {
     transform: translateY(-5px);
