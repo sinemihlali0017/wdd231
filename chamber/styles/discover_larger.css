@@ -36,9 +36,7 @@
 }
 
 /* Add some visual interest to the layout */
-.discover-card {
-    transition: transform 0.3s ease;
-}
+
 
 .discover-card:hover {
     transform: translateY(-5px);
