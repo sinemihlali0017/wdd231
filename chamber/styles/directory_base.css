@@ -39,12 +39,12 @@ header h1 {
 }
 
 /* Navigation styles */
-/*#main-nav {
+#main-nav {
     display: none;
     width: 100%;
     flex-direction: column;
     background: var(--blue);
-}*/
+}
 
 #main-nav a {
     color: var(--white);
