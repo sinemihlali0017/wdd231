@@ -5,24 +5,25 @@
             "card3 card4 card2"
             "card5 card6 card7"
             "card8 card8 card8";
-
-        .discover-card {
-            transition: transform 0.6s ease;
-        }
-
     }
 
-
-
-    #menu-btn {
-        display: none;
+    .discover-card {
+        transition: transform 0.6s ease;
     }
 
-    #main-nav {
-        display: flex;
-        flex-direction: row;
-    }
 }
+
+
+
+#menu-btn {
+    display: none;
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
