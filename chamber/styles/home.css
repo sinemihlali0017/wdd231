@@ -32,31 +32,41 @@ header h1 {
     background: none;
     border: none;
     color: var(--white);
+    cursor: pointer;
     display: block;
 }
 
-/* NAV */
 #main-nav {
     display: none;
     flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     background: var(--blue);
 }
 
-#main-nav a {
-    color: var(--white);
-    padding: 1rem;
-    text-decoration: none;
-}
-
-#main-nav a.active {
-    background: var(--gold);
-    color: var(--blue-dark);
-}
-
-/* Show menu (JavaScript toggles) */
 #main-nav.open {
     display: flex;
 }
+
+#main-nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    background-color: var(--gold);
+    color: var(--blue-dark);
+}
+
+#main-nav a.active {
+    background-color: var(--gold);
+    color: var(--blue-dark);
+    font-weight: bold;
+}
+
 
 /* HERO */
 .hero {
@@ -144,6 +154,47 @@ header h1 {
     height: auto;
     margin-bottom: 0.5rem;
 }
+
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        color: var(--white);
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Hide menu by default */
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        background: var(--blue);
+    }
+
+    /* Show menu when JS adds .open */
+    #main-nav.open {
+        display: flex;
+    }
+
+    #main-nav a {
+        color: var(--white);
+        padding: 1rem;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* LARGE SCREENS */
 @media (min-width: 750px) {

@@ -13,10 +13,13 @@ body {
     background: var(--light);
 }
 
+
+
+
 /* HEADER */
 header {
     background: var(--blue-dark);
-    color: var(--white);
+    color: var(--blue-dark);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -97,5 +100,6 @@ main {
 footer {
 
     justify-items: center;
-    background-color: #1b2a41;
+    background-color: var(--blue);
+    color: white;
 }
