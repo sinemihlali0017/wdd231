@@ -6,7 +6,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: black;
-    margin: 15;
+    margin: 15px;
     background-color: #FFFFFF;
 
 }
@@ -42,7 +42,7 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: darkgray;
+    color: blue;
 }
 
 .hamburger {
