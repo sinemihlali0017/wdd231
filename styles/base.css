@@ -5,7 +5,9 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #000;
+    color: black;
+    margin: 15;
+    background-color: #FFFFFF;
 
 }
 
@@ -27,7 +29,7 @@ header {
     grid-template-columns: 25px auto 44px;
     padding: 8px 0 8px 10px;
     align-items: end;
-    border-bottom: solid 1px #AFEEEE;
+    border-bottom: solid 1px grey;
     column-gap: 10px;
 }
 
@@ -117,10 +119,11 @@ h1 {
 
 
 footer {
-    background-color: #D3D3D3;
+    background-color: grey;
     padding: 1rem 10px;
-
     text-align: center;
+    color: black;
+
 
 
 
@@ -146,6 +149,7 @@ footer {
 
     width: 25px;
     height: 25px;
+    fill: bisque;
 }
 
 .social a:hover {
@@ -157,7 +161,7 @@ footer {
     box-sizing: border-box;
 }
 
-body {
+/*body {
     margin: 0;
     font-family: system-ui, sans-serif;
     margin: 15;
