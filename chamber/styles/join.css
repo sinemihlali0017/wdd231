@@ -9,41 +9,30 @@ root {
 
 }
 
+
+
+
 /* Larger screens */
-@media (min-width: 1025px) {
-    #menu-btn {
+
+@media (min-width: 768px) {
+
+    .hamburger {
         display: none;
     }
 
     #main-nav {
         display: flex;
+        position: static;
         flex-direction: row;
+        width: auto;
+        background: none;
+        gap: 1rem;
+    }
+
+    #main-nav a {
+        padding: 0.5rem 1rem;
     }
 }
-
-#main-nav a {
-    color: var(--light);
-    padding: 1rem;
-    text-decoration: none;
-}
-
-#main-nav a.active {
-    background: var(--gold);
-    color: var(--blue);
-}
-
-/* Show menu (JavaScript toggles) */
-#main-nav.open {
-    display: flex;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -51,7 +40,7 @@ root {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: lightgray;
+    background: var(--light);
     color: var(--blue);
 
 }
@@ -59,50 +48,70 @@ body {
 /* HEADER */
 header {
     background: var(--blue-dark);
-    color: var(--light);
+    color: var(--white);
     padding: 1rem;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-
-
-
+    position: relative;
 }
 
-nav {
-    margin-left: auto;
-
-}
-
-
-#nav-links {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-
-}
-
-#nav-links a {
-    color: var(--light);
-    /* or any stronger color */
-    font-weight: 600;
-    text-decoration: none;
-}
-
-#nav-links a:hover {
-    color: var(--blue-dark);
-    background: #e0b444;
-    padding: 0.3rem 0.6rem;
-    border-radius: 5px;
-    font-weight: 600;
-
-
-}
+/* HAMBURGER */
 
 .hamburger {
-    display: none;
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
 }
+
+/* NAVIGATION */
+
+#main-nav {
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 220px;
+
+    background: var(--blue-dark);
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav.open {
+    display: flex;
+}
+
+#main-nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+}
+
+#main-nav a:hover {
+    background: var(--white);
+    color: var(--blue-dark);
+}
+
+/* ACTIVE PAGE */
+
+#main-nav a.active {
+    background: var(--white);
+    color: var(--blue-dark);
+}
+
 
 /* Base styles */
 .join-container {
