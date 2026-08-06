@@ -33,7 +33,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-md);
-    color: #333;
+    color: black;
 }
 
 /* Typography */
@@ -114,7 +114,7 @@ header {
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     margin: var(--spacing-md) 0;
-    color: var(--text-dark);
+    color: black;
 }
 
 .scenario h3 {
