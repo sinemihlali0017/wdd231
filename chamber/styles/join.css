@@ -10,6 +10,16 @@ root {
 }
 
 
+.header {
+    background: var(--blue-dark);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
 /* Larger screens */
@@ -32,7 +42,13 @@ root {
     #main-nav a {
         padding: 0.5rem 1rem;
     }
+
+
+
 }
+
+
+
 
 
 
@@ -201,7 +217,7 @@ header {
 
 .submit-btn {
     color: #ffffff;
-    background: linear-gradient(to right, #1b2a41, #2e4a72);
+    background: linear-gradient(to right, #e0b444, #2e4a72);
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
